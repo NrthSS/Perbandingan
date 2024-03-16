@@ -9,12 +9,19 @@
 </head>
 <body>
     
+    <!-- Title  -->
     <h2> - Perbandingan - </h2>
     <i class='bx bxl-php ' style='color:#ffffff; font-size: 50px; position: absolute; top: 0; right: 0; padding: 20px 30px;'  ></i>
+
+    <!-- Pengurung agar menjadi bagian dari card-model di tengah -->
     <div class="division">
+
         <div class="container-all">
+
+            <!-- Pengelolaan input User -->
             <form action="" method="POST">
             
+                <!-- Php  -->
                 <?php
                 if(@$_POST['angka_pertama'] == "" || @$_POST['angka_kedua'] == "") {
                     echo "<p class='home'> Silahkan isi number pada inputan berikut <i class='bx bx-down-arrow-alt'></i></p>";
@@ -38,6 +45,7 @@
                 echo "<br>";
                 ?> 
 
+                <!-- form input untuk user -->
                 <div class="container">
                     <div class="p1">
                         <label for="angka_pertama">Angka Pertama :</label>
